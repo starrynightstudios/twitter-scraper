@@ -9,7 +9,7 @@ Mentions in the tweet are saved to a database to be evaluated later.
 2. Create `dev_tweets` and `tweets` databases and users
   * `mongo`
   * `use dev_tweets`
-  * ```
+  ```
     db.createUser(
                   {
                     user: 'twitterScraper', 
@@ -17,7 +17,7 @@ Mentions in the tweet are saved to a database to be evaluated later.
                     roles: [ "readWrite", "dbAdmin" ]
                   }
                 )
-    ```
+  ```
   * `use tweets`
   * ```
     db.createUser(
