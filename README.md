@@ -10,24 +10,24 @@ Mentions in the tweet are saved to a database to be evaluated later.
   * `mongo`
   * `use dev_tweets`
   ```
-    db.createUser(
-                  {
-                    user: 'twitterScraper', 
-                    pwd: 'twitterScraper', 
-                    roles: [ "readWrite", "dbAdmin" ]
-                  }
-                )
+  db.createUser(
+                {
+                  user: 'twitterScraper', 
+                  pwd: 'twitterScraper', 
+                  roles: [ "readWrite", "dbAdmin" ]
+                }
+              )
   ```
   * `use tweets`
-  * ```
-    db.createUser(
-                  {
-                    user: 'twitterScraper', 
-                    pwd: 'twitterScraper', 
-                    roles: [ "readWrite", "dbAdmin" ]
-                  }
-                )
-    ```
+  ```
+  db.createUser(
+                {
+                  user: 'twitterScraper', 
+                  pwd: 'twitterScraper', 
+                  roles: [ "readWrite", "dbAdmin" ]
+                }
+              )
+  ```
 ### Project Setup
 1. Clone project to your machine
 2. Create a virtualenv for twitter-scraper
