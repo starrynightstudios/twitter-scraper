@@ -1,7 +1,7 @@
 # Twitter Scraper
 
 Scrapes Twitter for data attached to a certain hashtag or user mention.
-Mentions in the tweet are saved to a database to be evaluated later.
+Mentions in the tweet are saved to a database to be evaluated later. This is a tool for saving tweets related to certain hashtags, mentions, or phrases for data analysis later. Tweets are saved to a MongoDB and analysis of the tweets is left open to the user for their specific needs.
 
 ## Installation
 ### MongoDB and Databases
