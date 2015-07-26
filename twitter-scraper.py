@@ -69,6 +69,7 @@ class TwitterStreamer(TwythonStreamer):
             self.save_mentions(tweet)
 
     def on_error(self, status_code, data):
+        # This method tells us there was an error
         logging.error(status_code)
         print status_code
 
@@ -139,7 +140,7 @@ def run_stream():
     if VERBOSE:
         print 'Scraping tweets with any of the following: %s' % TRACK_BY
     stream.statuses.filter(track=TRACK_BY)
-    
+
 
 def main(argv):
     try:
